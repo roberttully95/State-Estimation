@@ -82,9 +82,9 @@ public:
 
 	/**
 	 * @brief Overrides the current input of the system.
-	 * @param u The 1 x p vector containing the state of the system.
+	 * @param u The p x 1 vector containing the state of the system.
 	*/
-	void set_input(const Eigen::Matrix<T, 1, p>& u)
+	void set_input(const Eigen::Matrix<T, p, 1>& u)
 	{
 		this->u = u;
 	}
